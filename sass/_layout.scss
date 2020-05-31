@@ -1,0 +1,41 @@
+
+.header {
+    background-color: var(--grey-light-1);
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.home {
+    display: flex;
+}
+
+.collection {
+    background-color: var(--grey-light-3);
+    display: flex;
+    padding: 6rem 3rem 6rem 3rem;
+}
+
+.trending {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: var(--grey-light-3);
+    padding: 6rem;
+}
+
+.footer {
+    background-color: var(--grey-light-4);
+    color: var(--color-primary);
+    padding: 2.5rem 6rem;
+    display: flex;
+    
+    & > * {
+        flex: 1;
+        list-style: none;
+    }
+}
+
+
+
