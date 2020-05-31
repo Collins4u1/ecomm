@@ -14,6 +14,9 @@
             @media only screen and (max-width: $bp-small) {
                 display: none;
             }
+            @media only screen and (max-width: $bp-medium-2) {
+                display: none;
+            }
         }
 
         &__box {
@@ -27,6 +30,9 @@
             font-weight: 600;
 
             @media only screen and (max-width: $bp-small) {
+                font-size: 1rem;
+            }
+            @media only screen and (max-width: $bp-medium-2) {
                 font-size: 1rem;
             }
         }
@@ -93,6 +99,15 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+    @media only screen and (max-width: $bp-medium-2) {
+        max-width: 100%;
+        width: 100%;
+        position: relative;
+        background-image: url(/img/prod-0.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
     
 
@@ -108,6 +123,14 @@
         flex-basis: 50%;
 
         @media only screen and (max-width: $bp-small) {
+            max-width: 100%;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            padding-right: 5rem;
+            justify-content: space-around;
+        }
+        @media only screen and (max-width: $bp-medium-2) {
             max-width: 100%;
             width: 100%;
             height: 100%;
@@ -155,6 +178,13 @@
         width: 100%;
 
         @media only screen and (max-width: $bp-small) {
+           /*  max-width: 100%;
+            width: 100%;
+            position: absolute; */
+            display: none;
+            
+        }
+        @media only screen and (max-width: $bp-medium-2) {
            /*  max-width: 100%;
             width: 100%;
             position: absolute; */
@@ -220,6 +250,9 @@
         padding-right: 6.5rem;
 
     @media only screen and (max-width: $bp-small) {
+            padding-right: 3rem;
+        }
+    @media only screen and (max-width: $bp-medium-2) {
             padding-right: 3rem;
         }
 
@@ -322,6 +355,10 @@
             align-items: center;
             flex-direction: column;
         }
+        @media only screen and (max-width: $bp-medium-2) {
+            align-items: center;
+            flex-direction: column;
+        }
         
         &--overview {
             display: flex;
@@ -392,11 +429,21 @@
             align-items: flex-start;
         }
     }
+    @media only screen and (max-width: $bp-medium-2) {
+        flex-direction: column;
+        font-size: 2rem;
+        & > * {
+            align-items: flex-start;
+        }
+    }
 
     &__list {
         list-style: none;
         font-size: 1.3rem;
         @media only screen and (max-width: $bp-small) {
+            font-size: 1.6rem;
+        }
+        @media only screen and (max-width: $bp-medium-2) {
             font-size: 1.6rem;
         }
     }
